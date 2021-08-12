@@ -1,0 +1,51 @@
+1)      Solution: Used spring boot framework to create an application.
+
+2)      How to run:
+
+·  import the code as maven project in any IDE
+
+·  run mvn clean install
+
+·  target folder gets refreshed with new jar
+
+·  run java -jar <jar-name>.jar
+
+·  hit the below USRL using any rest client
+
+- to get if movie won oscur by Movie Name
+http://<host>:<portnumber>/movie/wonoscur/{movieTitle}
+
+
+- to update rating of any movie by Movie Name
+http://<host>:<portnumber>/movie/update-rating/{movieTitle}/{rating}
+
+
+- to get list of top 10 rated movie order by box office value http://<host>:<portnumber>/movie/top/{count}
+
+3)      How to test: Just use any client, which will call API. By this user rate the movie and get a list of top-rated movies ordered by box office value.
+
+· Import the code as maven project in any IDE
+
+· run mvn clean install
+
+· hit the below USRL using any rest client
+
+ 
+
+- to get if movie won oscur by Movie Name
+http://<host>:<portnumber>/movie/wonoscur/{movieTitle}
+
+
+- to update rating of any movie-by-Movie Name
+http://<host>:<portnumber>/movie/update-rating/{movieTitle}/{rating}
+
+
+- to get list of top 10 rated movie order by box office value http://<host>:<portnumber>/movie/top/{count}
+
+ 
+
+4)      To do: Currently created only backend API, UI needs to be design.
+
+5)      Assumptions: Some movie data should be present at application startup, so that user can rate the movie, and able to find the top-rated movies ordered by box office value.
+
+6)      Scale: We can use the spring cloud project for extra added features like service discovery and other goodies that make scaling easier (e.g: When we spin up a new instance, it can get the config easily from a config server, 'register' to ease the load balancing between services, have cluster-like behaviour, etc…

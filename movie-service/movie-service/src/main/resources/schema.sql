@@ -1,0 +1,13 @@
+CREATE SCHEMA IF NOT EXISTS MOVIE_SCHEMA;
+
+DROP TABLE IF EXISTS MOVIE_SCHEMA.MOVIE;
+CREATE TALE MOVIE_SCHEMA.MOVIE(
+	id BIGINT,
+	year VARCHAR(15),
+	category VARCHAR(100),
+	nominee VARCHAR(100),
+	additional_info varchar(100),
+	won boolean,
+	rating DOUBLE,
+	boc_office_value DECIMAL
+);
